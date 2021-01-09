@@ -1,4 +1,6 @@
-module.exports = (message, author) => {
+module.exports = (req, res) => {
+  const { message, author } = req.body
+  if (message && author) {
     const mongoose = require('./mongoose')
 
     const messageSchema = require('./messageSchema')
@@ -17,4 +19,7 @@ module.exports = (message, author) => {
         console.log("Provavelmente Salvou.")
       });
     });
+    res.status(200).send({message:'tudo funfando legal'})
+  }
+  res.status(400).send({message:'deu merda aqui'})
 }
