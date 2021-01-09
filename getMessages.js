@@ -1,4 +1,4 @@
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
   const mongoose = require('./mongoose')
 
   const messageSchema = require('./messageSchema')
@@ -6,7 +6,7 @@ module.exports = (req, res) => {
 
   const db = mongoose.connection;
   db.on('error', console.error.bind(console, 'connection error:'));
-  db.once('open', function () {
+  await db.once('open', function () {
     console.log('Conecto Carai!')
     
     Message.find( (err, Message) => {
@@ -14,4 +14,5 @@ module.exports = (req, res) => {
       res.status(200).send({message : Message})
     })
   });
+
 }

@@ -21,5 +21,5 @@ module.exports = (req, res) => {
     });
     res.status(200).send({message:'tudo funfando legal'})
   }
-  res.status(400).send({message:'deu merda aqui'})
+  elseres.status(400).send({message:'deu merda aqui'})
 }
