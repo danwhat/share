@@ -3,12 +3,11 @@ module.exports = (req, res) => {
   if (message && author) {
 
     const Message = require('./messageSchema')
-    const created = new Date().toJSON()
-    const newMessage = new Message({ message, author, created });
+    const createdAt = new Date().toJSON()
+    const newMessage = new Message({ message, author, createdAt });
 
     newMessage.save(function (err, newMessage) {
       if (err) return console.error(err);
-      console.log("Provavelmente Salvou.")
     });
     res.status(200).send({message:'tudo funfando legal'})
   }
