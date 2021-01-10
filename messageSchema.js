@@ -9,7 +9,7 @@ const messageSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Message is required']
   },
-  created: {
+  createdAt: {
     type: String,
     required: [true, 'Created date is required']
   }
