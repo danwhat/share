@@ -10,7 +10,7 @@ const countMessages = () => connection()
   .catch(errorHandler);
 
 const getMessages = () => connection()
-  .then(db => db.collection('messages').find().toArray())
+  .then(db => db.collection('messages').find().limit(30).toArray())
   .catch(errorHandler);
 
 const createMessage = (author, message, createdAt) => connection()
