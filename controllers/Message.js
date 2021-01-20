@@ -10,7 +10,6 @@ const createMessage = async (req, res) => {
   const { author, message } = req.body;
 
   const result = await Message.createMessage(author, message);
-  console.log(result);
 
   if (!result) return res.status(400).send({ message: 'Invalid data' });
 

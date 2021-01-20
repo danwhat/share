@@ -1,11 +1,6 @@
 const Message = require('../models/Message');
 
-const validateData = (author, message) => {
-  if (!author || typeof author !== 'string') return false;
-  if (!message || typeof message !== 'string') return false;
-
-  return true;
-};
+const validateData = (message) => message && typeof message === 'string';
 
 const getMessages = async () => {
   const messages = await Message.getMessages();
@@ -15,7 +10,7 @@ const getMessages = async () => {
 };
 
 const createMessage = async (author, message) => {
-  const isDataValid = validateData(author, message);
+  const isDataValid = validateData(message);
 
   if (!isDataValid) return null;
 
