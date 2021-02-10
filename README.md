@@ -1,6 +1,6 @@
 # Share - Backend
 
-![Telas do App de Mensagens](https://i.imgur.com/aij9AIl.png  =700x)
+![Telas do App de Mensagens](https://i.imgur.com/aij9AIl.png)
 
 Aplicação de compartilhamento de mensagens - Backend. 
 Para testar essa maravilha funcionando é só clicar [aqui](https://share-web.vercel.app/).
