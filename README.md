@@ -9,4 +9,4 @@ Para o Backend utilizamos **nodejs** com **express**. O banco de dados utilizado
 
 ## Contexto
 
-O projeto foi feito em dupla com [Herculito](https://github.com/herculesgabriel), Nosso objetivo era colocar em pratica o que estavamos aprendendo. Apesar de ser simple foi a primeira aplicação completa que criamos (com Frontend, Backend e Banco de dados).
+O projeto foi feito em dupla com [Herculito](https://github.com/herculesgabriel), Nosso objetivo era colocar em prática o que estávamos aprendendo. Apesar de ser simples foi a primeira aplicação completa que criamos (com Frontend, Backend e Banco de dados).
